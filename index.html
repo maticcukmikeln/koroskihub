@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KoroškiHub</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon (Logo for the tab bar) -->
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <!-- Google Font (League Spartan) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <!-- Header Section -->
+    <header>
+        <h1>KoroškiHub</h1>
+        <p>Pridruži se naši skupnosti na Discordu in Minecraft strežniku!</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="buttons">
+            <a href="https://dsc.gg/koroskihub" target="_blank" class="button discord-button">
+                Discord
+            </a>
+            <button class="button copy-button" onclick="copyIP()">
+                Kopiraj IP
+            </button>
+        </div>
+        <p class="server-ip">IP: mc.koroskihub.eu</p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 KoroškiHub | Vse pravice pridržane.</p>
+    </footer>
+</div>
+
+<!-- JavaScript for Copying IP -->
+<script>
+    function copyIP() {
+        const ip = "mc.koroskihub.eu";
+        navigator.clipboard.writeText(ip).then(() => {
+            alert("Server IP je bil kopiran: " + ip);
+        }).catch(err => {
+            console.error("Ups, težava s kopiranjem IP-ja: ", err);
+        });
+    }
+</script>
+</body>
+</html>

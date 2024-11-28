@@ -1,0 +1,93 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;  /* Apply League Spartan font globally */
+}
+
+/* Body Styling */
+body {
+    background: url('your-wallpaper-url.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Container (Square) */
+.container {
+    background: rgba(0, 0, 0, 0.7);  /* Semi-transparent dark background */
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+header h1 {
+    font-size: 3.8rem;  /* Slightly larger header */
+    color: #ff6700;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #a6a6a6;
+}
+
+/* Buttons Section */
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;  /* Increase the space between buttons */
+}
+
+.button {
+    padding: 18px 36px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.discord-button {
+    background-color: #5865f2;
+    color: #fff;
+    text-decoration: none;
+}
+
+.copy-button {
+    background-color: #ff6700;
+    color: #fff;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* IP Display */
+.server-ip {
+    margin-top: 30px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    color: #6c6c6c;
+}
